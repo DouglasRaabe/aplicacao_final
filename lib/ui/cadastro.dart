@@ -4,12 +4,15 @@ class Cadastro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Novo Usuario'),
+      ),
       body: Column(
         children: [
           TextFormField(),
           TextFormField(),
           TextFormField(),
-          TextButton(onPressed: null, child: Text('Cadasrtrar')),
+          ElevatedButton(onPressed: null, child: Text('Cadastrar')),
         ],
       ),
     );
